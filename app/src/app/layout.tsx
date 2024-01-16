@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import "react-toastify/dist/ReactToastify.css";
+import { Slide, ToastContainer } from "react-toastify";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,7 +20,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ToastContainer
+          stacked
+          transition={Slide}
+          closeButton={false}
+          hideProgressBar={true}
+          autoClose={1500}
+          pauseOnHover={false}
+          toastStyle={{
+            backgroundColor: "#09090B",
+            color: "#A1A1AA",
+            border: "2px solid #27272A",
+            width: "270px",
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
