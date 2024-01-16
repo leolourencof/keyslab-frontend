@@ -12,7 +12,7 @@ import Lock from "../assets/icons/Lock.svg";
 import Logo from "../assets/images/Logo.svg";
 import SideBar from "../assets/images/SideBar.svg";
 
-import { instance } from "../services/api";
+import { instance } from "../services/api.services";
 import { Login } from "../types/login.types";
 import { loginFormSchema } from "../schemas/login.schema";
 
