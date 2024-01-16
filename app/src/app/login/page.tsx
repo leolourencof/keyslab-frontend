@@ -36,7 +36,7 @@ export default function Login() {
   async function sendForm(data: Login) {
     try {
       setIsLoading(true);
-      await instance.post("auth/login", data, withCredentials: true);
+      await instance.post("auth/login", data, { withCredentials: true });
 
       setIsLoading(false);
     } catch (error) {
