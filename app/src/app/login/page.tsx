@@ -59,7 +59,7 @@ export default function Login() {
         </div>
       </div>
 
-      <div className="w-full max-w-[416px] mx-auto h-full flex justify-center items-center px-4 lg:px-o">
+      <div className="w-full max-w-[416px] mx-auto h-full flex justify-center items-center px-4 lg:px-0">
         <div className="w-full">
           <div>
             <h1 className="text-primary-white text-2xl font-semibold text-center">
